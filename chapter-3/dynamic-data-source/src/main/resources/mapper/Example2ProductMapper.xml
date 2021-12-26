@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.studymachine.mapper.Example2ProductMapper">
+
+    <select id="queryGoodInfoByGoodId" resultType="cn.studymachine.entity.Example2ProductEntity"
+            parameterType="cn.studymachine.pojo.Example2ProductBo">
+        select * from example2_product
+        where good_id=#{bo.goodId}
+    </select>
+
+</mapper>
