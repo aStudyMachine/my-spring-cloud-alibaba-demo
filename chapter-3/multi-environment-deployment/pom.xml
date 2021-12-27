@@ -3,32 +3,27 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>my-spring-cloud-alibaba-demo</artifactId>
+        <artifactId>chapter-3</artifactId>
         <groupId>cn.studymachine</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>chapter-3</artifactId>
     <packaging>pom</packaging>
 
+    <description>
+        maven + spring cloud alibaba 实现多环境部署
+    </description>
     <modules>
-        <module>dynamic-data-source</module>
-        <module>replace-table-name</module>
-        <module>multi-environment-deployment</module>
-        <module>3.3-multi-tenant-spring-cloud-alibaba</module>
+        <module>user-client</module>
+        <module>user-distribution</module>
+        <module>user-server</module>
     </modules>
+
+    <artifactId>multi-environment-deployment</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
-    <dependencies>
-
-    </dependencies>
-
-
-
 
 </project>

@@ -3,32 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>my-spring-cloud-alibaba-demo</artifactId>
+        <artifactId>multi-environment-deployment</artifactId>
         <groupId>cn.studymachine</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>chapter-3</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>user-client</artifactId>
 
-    <modules>
-        <module>dynamic-data-source</module>
-        <module>replace-table-name</module>
-        <module>multi-environment-deployment</module>
-        <module>3.3-multi-tenant-spring-cloud-alibaba</module>
-    </modules>
+    <description>包含dubbo sdk, 出参入参, 常量模块等</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
-    <dependencies>
-
-    </dependencies>
-
-
-
 
 </project>
