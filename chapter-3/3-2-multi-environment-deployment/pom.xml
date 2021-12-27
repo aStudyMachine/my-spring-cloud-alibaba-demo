@@ -19,7 +19,7 @@
         <module>user-server</module>
     </modules>
 
-    <artifactId>multi-environment-deployment</artifactId>
+    <artifactId>3-2-multi-environment-deployment</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -3,17 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>chapter-3</artifactId>
+        <artifactId>3-2-multi-environment-deployment</artifactId>
         <groupId>cn.studymachine</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>3.3-multi-tenant-spring-cloud-alibaba</artifactId>
+    <artifactId>user-server</artifactId>
+    <description>包含一些核心代码 , 例如 dubbo接口</description>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.studymachine</groupId>
+            <artifactId>user-client</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
