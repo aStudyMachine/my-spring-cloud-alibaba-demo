@@ -9,29 +9,15 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>chapter-3</artifactId>
+    <artifactId>chapter-4</artifactId>
     <packaging>pom</packaging>
-
     <modules>
-        <module>dynamic-data-source</module>
-        <module>replace-table-name</module>
-        <module>3-2-multi-environment-deployment</module>
-        <module>3-3-multi-tenant-spring-cloud-alibaba</module>
+        <module>4-3-1-nacos-client-spring-boot</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
-    </dependencies>
-
-
-
 
 </project>

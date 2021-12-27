@@ -29,11 +29,11 @@
 
     <modules>
         <module>chapter-3</module>
+        <module>chapter-4</module>
     </modules>
 
 
     <dependencies>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -69,11 +69,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
 
         <dependency>
