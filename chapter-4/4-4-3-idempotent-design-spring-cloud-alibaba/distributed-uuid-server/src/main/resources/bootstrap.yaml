@@ -1,0 +1,27 @@
+dubbo:
+  scan:
+    base-packages: cn.studymachine
+  protocol:
+    name: dubbo
+    port: 26761
+spring:
+  application:
+    name: distributed-uuid-server
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 2c578779-ced7-41a5-bb2b-b8c189bc850f
+        group: distributed-uuid-server
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 2c578779-ced7-41a5-bb2b-b8c189bc850f
+        group: distributed-uuid-server
+        extension-configs:
+          - data-id: snowflake-config.yaml
+            group: distributed-uuid-server
+            refresh: true
+server:
+  port: 7656
