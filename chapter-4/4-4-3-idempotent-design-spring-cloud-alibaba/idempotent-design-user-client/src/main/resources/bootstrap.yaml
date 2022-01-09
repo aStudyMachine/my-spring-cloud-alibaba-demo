@@ -26,3 +26,6 @@ spring:
         file-extension: properties
 server:
   port: 7889
+
+example2-user-client:
+  mideng: true

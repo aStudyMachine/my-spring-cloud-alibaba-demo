@@ -5,8 +5,8 @@ import cn.studymachine.config.SnowflakeInfo;
 import cn.studymachine.service.DistributedService;
 import cn.studymachine.util.NetUtils;
 import org.apache.dubbo.config.annotation.DubboService;
-import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @DubboService(version = "1.0.0",group = "distributed-uuid-server")
 public class DistributedServiceImpl implements DistributedService {
 
-    @Autowired
+    @Resource
     private SnowflakeConfig snowflakeConfig;
 
    private final Map<String, SnowFlake> snowFlakeHandlerMap = new ConcurrentHashMap<>();
