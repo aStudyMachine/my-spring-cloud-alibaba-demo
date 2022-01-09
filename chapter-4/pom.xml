@@ -15,6 +15,7 @@
         <module>4-3-1-nacos-client-spring-boot</module>
         <module>4-3-2-use-spring-cloud-alibaba-discovery</module>
         <module>4-4-3-idempotent-design-spring-cloud-alibaba</module>
+        <module>4-5-2-ribbon-discovery-spring-cloud-alibaba</module>
     </modules>
 
     <properties>
