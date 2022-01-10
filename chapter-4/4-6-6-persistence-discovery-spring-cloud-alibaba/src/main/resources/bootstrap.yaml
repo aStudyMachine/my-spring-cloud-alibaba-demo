@@ -1,0 +1,26 @@
+dubbo:
+  scan:
+    base-packages: cn.studymachine
+  protocol:
+    name: dubbo
+    port: 26768
+  registry:
+    address: nacos://127.0.0.1:8848
+spring:
+  application:
+    name: persistence-discovery-spring-cloud-alibaba
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 2c578779-ced7-41a5-bb2b-b8c189bc850f
+        group: persistence-discovery-spring-cloud-alibaba
+        # 设置实例为持久化 ,  ephemeral为 `短暂的` 的意思
+        ephemeral: false
+server:
+  port: 7891
+
+
+
