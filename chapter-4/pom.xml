@@ -17,6 +17,7 @@
         <module>4-4-3-idempotent-design-spring-cloud-alibaba</module>
         <module>4-5-2-ribbon-discovery-spring-cloud-alibaba</module>
         <module>4-6-6-persistence-discovery-spring-cloud-alibaba</module>
+        <module>4-7-4-integration-dubbo-alibaba-metadata</module>
     </modules>
 
     <properties>
