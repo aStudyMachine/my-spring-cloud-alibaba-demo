@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-cloud-alibaba-config
+  cloud:
+    nacos:
+      config:
+        namespace: 2c578779-ced7-41a5-bb2b-b8c189bc850f
+        group: spring-cloud-alibaba-config
+        password: nacos
+        enable-remote-sync-config: true
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        name: spring-cloud-alibaba-config
+        file-extension: yaml
+        extension-configs:
+          - data-id: spring-cloud-alibaba-config.yaml
+            group: spring-cloud-alibaba-config
+            namespace: 2c578779-ced7-41a5-bb2b-b8c189bc850f
+            refresh: true
+server:
+  port: 8889

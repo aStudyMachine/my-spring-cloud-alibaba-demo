@@ -25,6 +25,7 @@
         <module>chapter-3</module>
         <module>chapter-4</module>
         <module>dubbo-common-api</module>
+        <module>chapter-5</module>
     </modules>
 
 
