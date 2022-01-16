@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>5-3-6-spring-cloud-alibaba-config</module>
+        <module>5-4-5-nacos2.0-grpc-spring-cloud-alibaba-config</module>
     </modules>
 
     <properties>
