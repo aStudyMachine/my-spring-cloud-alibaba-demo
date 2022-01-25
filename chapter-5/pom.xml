@@ -15,6 +15,7 @@
         <module>5-3-6-spring-cloud-alibaba-config</module>
         <module>5-4-5-nacos2.0-grpc-spring-cloud-alibaba-config</module>
         <module>5-5-2-soft-jraft-apache-derby-config</module>
+        <module>5-6-4-beata-spring-cloud-alibaba-config</module>
     </modules>
 
     <properties>

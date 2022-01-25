@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: beata-spring-cloud-alibaba-config
+  cloud:
+    nacos:
+      config:
+        namespace: 877dda77-5d32-4ef7-95dd-6be66dc3ed58
+        group: beata-spring-cloud-alibaba-config
+        password: nacos
+        enable-remote-sync-config: true
+        server-addr: 127.0.0.1:8848
+        username: nacos
+        name: beata-spring-cloud-alibaba-config
+        file-extension: properties
+        extension-configs:
+          - data-id: beata-spring-cloud-alibaba-config-test.yaml
+            group: beata-spring-cloud-alibaba-config
+            namespace: 877dda77-5d32-4ef7-95dd-6be66dc3ed58
+            refresh: true
