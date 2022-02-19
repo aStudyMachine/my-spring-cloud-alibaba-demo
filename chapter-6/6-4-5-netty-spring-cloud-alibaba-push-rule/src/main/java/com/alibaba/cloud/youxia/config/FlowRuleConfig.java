@@ -1,13 +1,6 @@
 package com.alibaba.cloud.youxia.config;
 
-import com.alibaba.cloud.youxia.service.RuleService;
-import com.alibaba.csp.sentinel.slots.block.RuleConstant;
-import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
-import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Configuration
 public class FlowRuleConfig {

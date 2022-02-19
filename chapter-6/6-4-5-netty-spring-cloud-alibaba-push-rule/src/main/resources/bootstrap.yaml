@@ -6,6 +6,7 @@ dubbo:
     port: 26568
   registry:
     address: nacos://127.0.0.1:8848
+
 spring:
   application:
     name: netty-spring-cloud-alibaba-push-rule
@@ -20,7 +21,7 @@ spring:
     sentinel:
       enabled: true
       transport:
-        dashboard: localhost:8080
+        dashboard: 192.168.10.11:8080
         port: 8745
 server:
   port: 7867

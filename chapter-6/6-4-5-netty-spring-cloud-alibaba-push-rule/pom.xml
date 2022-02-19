@@ -10,11 +10,14 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>netty-spring-cloud-alibaba-push-rule</artifactId>
-    <groupId>cn.studymachine</groupId>
+    <artifactId>6-4-5-netty-spring-cloud-alibaba-push-rule</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>netty-spring-cloud-alibaba-push-rule</name>
+    <name>6-4-5-netty-spring-cloud-alibaba-push-rule</name>
+
+    <description>
+        【实例】用Netty实现通信渠道，实现“从应用端到Sentinel控制台 的流量控制规则推送”
+    </description>
 
     <dependencies>
         <dependency>
@@ -56,12 +59,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
 
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -108,11 +105,6 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.10</version>
         </dependency>
-        <dependency>
-            <groupId>cn.studymachine</groupId>
-            <artifactId>dubbo-common-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
+
     </dependencies>
 </project>
