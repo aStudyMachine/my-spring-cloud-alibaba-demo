@@ -1,0 +1,34 @@
+dubbo:
+  scan:
+    base-packages: com.alibaba.cloud.youxia
+  protocol:
+    name: dubbo
+    port: 26568
+  registry:
+    address: nacos://127.0.0.1:8848
+spring:
+  application:
+    name: verify-persistence-rule
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 2c578779-ced7-41a5-bb2b-b8c189bc850f
+        group: verify-persistence-rule
+      config:
+        group: DEFAULT_GROUP
+        namespace: 2c578779-ced7-41a5-bb2b-b8c189bc850f
+        server-addr: 127.0.0.1:8848
+        enabled: true
+    sentinel:
+      enabled: true
+      transport:
+        dashboard: localhost:8080
+        port: 8745
+server:
+  port: 7867
+
+
+
