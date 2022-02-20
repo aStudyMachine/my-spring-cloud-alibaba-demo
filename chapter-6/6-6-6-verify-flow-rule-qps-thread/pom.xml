@@ -10,8 +10,11 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>verify-flow-rule-qps-thread</artifactId>
-    <groupId>cn.studymachine</groupId>
+    <artifactId>6-6-6-verify-flow-rule-qps-thread</artifactId>
+
+    <description>
+        6.6.6【实例】通过控制台实时地修改QPS验证组件的流量防控
+    </description>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>verify-flow-rule-qps-thread</name>

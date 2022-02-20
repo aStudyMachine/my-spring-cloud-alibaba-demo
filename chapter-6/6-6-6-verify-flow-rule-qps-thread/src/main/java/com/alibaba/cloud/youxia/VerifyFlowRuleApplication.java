@@ -1,7 +1,6 @@
 package com.alibaba.cloud.youxia;
 
-import com.alibaba.cloud.youxia.service.RuleService;
-import com.alibaba.cloud.youxia.service.VerifyFlowService;
+import cn.studymachine.service.VerifyFlowService;
 import com.alibaba.csp.sentinel.init.InitExecutor;
 import com.alibaba.csp.sentinel.slots.block.RuleConstant;
 import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
@@ -26,17 +25,20 @@ public class VerifyFlowRuleApplication {
     private static final String RES_KEY = INTERFACE_RES_KEY + ":verifyFlow()";
 
     static void initFlowRule(int interfaceFlowLimit, boolean method) {
+        List<FlowRule> ruleList = new ArrayList<>();
+
         FlowRule flowRule = new FlowRule(INTERFACE_RES_KEY)
                 .setCount(interfaceFlowLimit)
                 .setGrade(RuleConstant.FLOW_GRADE_QPS);
-        List<FlowRule> list = new ArrayList<>();
+        ruleList.add(flowRule);
+
         if (method) {
             FlowRule flowRule1 = new FlowRule(RES_KEY)
                     .setCount(5)
                     .setGrade(RuleConstant.FLOW_GRADE_QPS);
-            list.add(flowRule1);
+            ruleList.add(flowRule1);
         }
-        list.add(flowRule);
-        FlowRuleManager.loadRules(list);
+
+        FlowRuleManager.loadRules(ruleList);
     }
 }
