@@ -30,7 +30,7 @@ spring:
         file: "classpath: api.json"
         ruleType: gw-api-group
       transport:
-        dashboard: localhost:8080
+        dashboard: 192.168.10.11:8080
       filter:
         enabled: true
       scg.fallback:

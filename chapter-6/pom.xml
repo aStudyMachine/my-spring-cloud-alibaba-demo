@@ -19,7 +19,7 @@
         <module>sentinel-core-access</module>
         <module>6-3-3-sentinel-spring-cloud-alibaba</module>
         <module>6-4-5-netty-spring-cloud-alibaba-push-rule</module>
-        <module>gateway-access-sentinel</module>
+        <module>6-5-4-gateway-access-sentinel</module>
         <module>verify-flow-rule-qps-thread</module>
         <module>verify-degrade-rule</module>
         <module>verify-system-rule</module>

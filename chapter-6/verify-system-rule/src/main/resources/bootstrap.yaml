@@ -29,7 +29,7 @@ spring:
     sentinel:
       enabled: true
       transport:
-        dashboard: localhost:8080
+        dashboard: 192.168.10.11:8080
         port: 8745
 server:
   port: 7867

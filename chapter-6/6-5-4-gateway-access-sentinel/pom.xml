@@ -10,9 +10,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>gateway-access-sentinel</artifactId>
-    <groupId>cn.studymachine</groupId>
+    <artifactId>6-5-4-gateway-access-sentinel</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <description>
+        6.5.4 【实例】将Spring Cloud Gateway应用接入Sentinel,管理流量控制规则
+    </description>
+
     <packaging>jar</packaging>
     <name>gateway-access-sentinel</name>
 
@@ -107,13 +110,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>cn.studymachine</groupId>
-            <artifactId>dubbo-common-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
