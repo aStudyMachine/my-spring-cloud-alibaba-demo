@@ -1,5 +1,6 @@
 package com.alibaba.cloud.youxia;
-import com.alibaba.cloud.youxia.service.SystemRuleService;
+
+import cn.studymachine.service.SystemRuleService;
 import com.alibaba.csp.sentinel.init.InitExecutor;
 import com.alibaba.csp.sentinel.slots.system.SystemRule;
 import com.alibaba.csp.sentinel.slots.system.SystemRuleManager;

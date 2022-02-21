@@ -22,7 +22,7 @@
         <module>6-5-4-gateway-access-sentinel</module>
         <module>6-6-6-verify-flow-rule-qps-thread</module>
         <module>6-7-3-verify-degrade-rule</module>
-        <module>verify-system-rule</module>
+        <module>6-8-3-verify-system-rule</module>
     </modules>
 
     <properties>
@@ -37,11 +37,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context-support</artifactId>
-                <version>${spring.framework.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -67,11 +62,11 @@
                 <version>${spring-boot.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-cache</artifactId>
-                <version>${spring-boot.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-starter-cache</artifactId>-->
+<!--                <version>${spring-boot.version}</version>-->
+<!--            </dependency>-->
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>

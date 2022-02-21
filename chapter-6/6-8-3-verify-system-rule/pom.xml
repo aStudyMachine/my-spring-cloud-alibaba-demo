@@ -10,8 +10,10 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>verify-system-rule</artifactId>
-    <groupId>cn.studymachine</groupId>
+    <artifactId>6-8-3-verify-system-rule</artifactId>
+    <description>
+        6.8.3 【实例】通过调整应用服务的入口流量和负载，验证系统自适应保护
+    </description>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>verify-system-rule</name>
