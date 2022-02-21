@@ -1,13 +1,6 @@
 package com.alibaba.cloud.youxia.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.client.RestTemplate;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
-import java.util.concurrent.Executors;
 
 @Configuration
 public class DegradeConfig {

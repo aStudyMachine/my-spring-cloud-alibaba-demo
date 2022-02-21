@@ -1,6 +1,6 @@
 package com.alibaba.cloud.youxia.controller;
 
-import com.alibaba.cloud.youxia.service.DegradeService;
+import cn.studymachine.service.DegradeService;
 import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

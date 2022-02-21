@@ -1,13 +1,10 @@
 package com.alibaba.cloud.youxia;
 
-import com.alibaba.cloud.youxia.service.DegradeService;
-import com.alibaba.cloud.youxia.service.VerifyFlowService;
+import cn.studymachine.service.DegradeService;
 import com.alibaba.csp.sentinel.init.InitExecutor;
 import com.alibaba.csp.sentinel.slots.block.RuleConstant;
 import com.alibaba.csp.sentinel.slots.block.degrade.DegradeRule;
 import com.alibaba.csp.sentinel.slots.block.degrade.DegradeRuleManager;
-import com.alibaba.csp.sentinel.slots.block.flow.FlowRule;
-import com.alibaba.csp.sentinel.slots.block.flow.FlowRuleManager;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -28,16 +25,26 @@ public class VerifyDegradeApplication {
     private static final String RES_KEY = INTERFACE_RES_KEY + ":verifyDegradeRule()";
 
     static void initDegradeRule(int interfaceDegradeLimit, boolean method) {
-        DegradeRule degradeRule = new DegradeRule(INTERFACE_RES_KEY)
-                .setGrade(RuleConstant.DEGRADE_GRADE_EXCEPTION_COUNT).setMinRequestAmount(interfaceDegradeLimit).setCount(8).setTimeWindow(5);
         List<DegradeRule> list = new ArrayList<>();
+
+        // // interface级别的服务降级规则
+        // DegradeRule degradeRule = new DegradeRule(INTERFACE_RES_KEY)
+        //         .setGrade(RuleConstant.DEGRADE_GRADE_EXCEPTION_COUNT)
+        //         .setMinRequestAmount(interfaceDegradeLimit)
+        //         .setCount(8)
+        //         .setTimeWindow(5);
+        // list.add(degradeRule);
+
         if (method) {
+            // 方法级别的服务降级规则
             DegradeRule degradeRule1 = new DegradeRule(RES_KEY)
-                    .setCount(8).setMinRequestAmount(interfaceDegradeLimit)
-                    .setGrade(RuleConstant.DEGRADE_GRADE_EXCEPTION_COUNT).setTimeWindow(5);
+                    .setCount(8)
+                    .setMinRequestAmount(interfaceDegradeLimit)
+                    .setGrade(RuleConstant.DEGRADE_GRADE_EXCEPTION_COUNT)
+                    .setTimeWindow(5);
             list.add(degradeRule1);
         }
-        list.add(degradeRule);
+
         DegradeRuleManager.loadRules(list);
     }
 }

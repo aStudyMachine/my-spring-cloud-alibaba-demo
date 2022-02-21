@@ -10,8 +10,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>verify-degrade-rule</artifactId>
-    <groupId>cn.studymachine</groupId>
+    <artifactId>6-7-3-verify-degrade-rule</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>verify-degrade-rule</name>
