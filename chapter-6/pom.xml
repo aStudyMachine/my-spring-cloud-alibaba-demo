@@ -23,6 +23,7 @@
         <module>6-6-6-verify-flow-rule-qps-thread</module>
         <module>6-7-3-verify-degrade-rule</module>
         <module>6-8-3-verify-system-rule</module>
+        <module>6-9-5-verify-persistence-rule</module>
     </modules>
 
     <properties>

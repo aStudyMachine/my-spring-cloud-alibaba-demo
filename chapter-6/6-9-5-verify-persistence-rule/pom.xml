@@ -10,11 +10,14 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>verify-persistence-rule</artifactId>
-    <groupId>cn.studymachine</groupId>
+    <artifactId>6-9-5-verify-persistence-rule</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>verify-persistence-rule</name>
+    <name>6-9-5-verify-persistence-rule</name>
+
+    <description>
+        6.9.5【实例】将Dubbo应用接入Sentinel,实现规则的动态配置和持久化
+    </description>
 
     <dependencies>
         <dependency>
